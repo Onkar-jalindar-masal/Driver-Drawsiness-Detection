@@ -8,9 +8,7 @@ pygame.mixer.init()
 alarm = pygame.mixer.Sound("alarm.wav")
 mp_face_mesh = mp.solutions.face_mesh
 
-face_mesh = mp_face_mesh.FaceMesh(
-    max_num_faces=1,
-    refine_landmarks=True)
+face_mesh = mp_face_mesh.FaceMesh(max_num_faces=1,refine_landmarks=True)
 
 LEFT_EYE = [362, 385, 387, 263, 373, 380]
 RIGHT_EYE = [33, 160, 158, 133, 153, 144]
